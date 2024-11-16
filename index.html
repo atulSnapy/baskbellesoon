@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        /* Font-face rule to use the Poppins font */
+        @font-face {
+            font-family: 'Poppins';
+            src: url('Poppins-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            /* Applying Poppins font */
+            background-color: #f8f5e1;
+            /* Light beige background to match theme */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .logo img {
+            width: 120px;
+            /* Increased logo size */
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .company-name {
+            margin-left: 20px;
+            font-size: 28px;
+            font-weight: 700;
+            color: #d2b46c;
+            /* Theme color */
+            letter-spacing: 2px;
+        }
+
+        .email {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .email a {
+            color: #d2b46c;
+            /* Theme color */
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .coming-soon {
+            font-size: 60px;
+            font-weight: bold;
+            /* Made text bold */
+            color: #d2b46c;
+            /* Theme color */
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .coming-soon span {
+            color: #2d3748;
+        }
+
+        .contact-info {
+            font-size: 16px;
+            color: #aaa;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #d2b46c;
+            /* Theme color */
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                justify-content: flex-start;
+                padding-top: 80px;
+                /* Reduced padding to bring the content down */
+            }
+
+            .coming-soon {
+                font-size: 48px;
+            }
+
+            .header {
+                flex-direction: column;
+            }
+
+            .company-name {
+                font-size: 24px;
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .logo img {
+                width: 100px;
+                /* Slightly smaller logo size for mobile screens */
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Company Logo">
+        </div>
+        <div class="company-name">Bask&nbsp;and&nbsp;Belle</div>
+    </div>
+    <div class="coming-soon">
+        We Are <span>Coming Soon</span>
+    </div>
+    <div class="email">
+        Say Hello! <a href="mailto:office@jandhtextiles.com">office@jandhtextiles.com</a>
+    </div>
+    <div class="contact-info">
+        Hold tight, we're almost ready!
+    </div>
+</body>
+
+</html>
